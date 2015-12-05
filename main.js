@@ -1,8 +1,6 @@
 // microphone input
 var mic;
 
-
-
 // Set up cannot be named differently, constructs canvas
 function setup() {
   createCanvas(displayWidth, displayHeight);
@@ -17,7 +15,7 @@ function setup() {
 function draw() {
 	fill(mouseX%255, mouseY%255, 255-(mouseY+mouseX)/100);
 	micLevel = mic.getLevel();
-	console.log(micLevel);
-	ellipse(mouseX, mouseY, micLevel*1000, micLevel*1000);
+
+	ellipse(mouseX, mouseY, 50 + micLevel*500, 50+ micLevel*500);
 }
 
