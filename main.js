@@ -6,7 +6,7 @@ function setup() {
 
 // draw cannot be named differently, will be called in a loop
 function draw() {
-  stroke(255);
+  stroke(150);
 }
 
 function flower() {
