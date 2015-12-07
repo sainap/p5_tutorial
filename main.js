@@ -10,7 +10,6 @@ function draw() {
 }
 
 function flower() {
-  push();
   stroke(255);
   fill(255, 0, 100, 255);
   translate(mouseX, mouseY);
@@ -18,6 +17,5 @@ function flower() {
     ellipse(0, 0, 20, 80);
     rotate(PI/6);
   }
-  pop();
 }
 
