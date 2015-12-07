@@ -21,7 +21,6 @@ function setup() {
 
 function draw() {
     micLevel = mic.getLevel();
-    ellipse(mouseX, mouseY, 50 + micLevel*500, 50+ micLevel*500);
 
 }
 
