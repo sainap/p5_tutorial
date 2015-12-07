@@ -20,6 +20,8 @@ function setup() {
 }
 
 function draw() {
+    micLevel = mic.getLevel();
+    ellipse(mouseX, mouseY, 50 + micLevel*500, 50+ micLevel*500);
 
 }
 
@@ -32,7 +34,7 @@ function resultCallback() {
     text(mostrecentword, 100, 100);
 }
 
-rcb = resultCallback;
+// rcb = resultCallback;
 // End of Speech Detection
 
 
